@@ -87,8 +87,29 @@ class iDokladMini {
         return $data;
     }
     
+    /**
+     * 
+     * @param int $vs
+     * @return int
+     */
     public static function getInvoiceIdByVs($vs){
         $ret = self::curlData('IssuedInvoices', array('query' => $vs));
         return $ret['Data'][0]['Id'];
+    }
+    
+    /**
+     * 
+     * @param string $base64
+     * @param string $path
+     * @return string
+     */
+    public static function base64toPDF($base64, $path){
+        $pdf_string = base64_decode($base64);
+        $path = rtrim($path,'/');
+        $name = 'iDoklad_'.time().'.pdf';
+        $pdf = fopen($path.'/'.$name, 'w');
+        fwrite($pdf, $pdf_string);
+        fclose($pdf);
+        return $path.'/'.$name;
     }
 }

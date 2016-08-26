@@ -41,6 +41,7 @@ class iDoklad {
             throw new Exception($ret['Message']);
         } else {
             self::$token = $token;
+            return $token;
         }
     }
     

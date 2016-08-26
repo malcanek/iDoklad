@@ -86,4 +86,9 @@ class iDokladMini {
         curl_close($curl);
         return $data;
     }
+    
+    public static function getInvoiceIdByVs($vs){
+        $ret = self::curlData('IssuedInvoices', array('query' => $vs));
+        return $ret['Data'][0]['Id'];
+    }
 }

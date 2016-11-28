@@ -1,2 +1,2 @@
 # iDoklad
-PHP třída pro ulehčení požadavků na iDoklad api.
+PHP třída pro ulehčení požadavků na iDoklad api v1.

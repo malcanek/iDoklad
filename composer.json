@@ -13,7 +13,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"idoklad\\": "/"}
+        "psr-4": {"idoklad\\": ""}
     },
     "require": {
         "php": ">=5.0.0"

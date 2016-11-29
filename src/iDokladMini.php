@@ -4,6 +4,10 @@
  * Only auth and cURL layer for iDoklad api
  * @author honza
  */
+
+namespace iDoklad;
+use Exception;
+
 class iDokladMini {
     private static $token;
     private static $url = 'https://app.idoklad.cz/developer/api/';

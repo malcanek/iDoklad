@@ -4,6 +4,10 @@
  * Class for iDoklad api
  * @author Jan Malcánek
  */
+
+namespace iDoklad;
+use Exception;
+
 class iDoklad {
     private static $token;
     private static $url = 'https://app.idoklad.cz/developer/api/';

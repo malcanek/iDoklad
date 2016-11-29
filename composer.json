@@ -3,7 +3,7 @@
     "description": "PHP třída pro ulehčení požadavků na iDoklad api v1.",
     "keywords": ["idoklad", "fakturace"],
     "homepage": "https://github.com/malcanek/iDoklad",
-     "license": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jan Malcánek",
@@ -12,6 +12,9 @@
             "role": "Developer"
         }
     ],
+    "autoload": {
+        "psr-4": {"idoklad\\": "/"}
+    },
     "require": {
         "php": ">=5.0.0"
     }

@@ -13,7 +13,7 @@
         }
     ],
     "autoload": {
-        "psr-0": {"iDoklad\\": "src/"}
+        "psr-4": {"iDoklad\\": "src/"}
     },
     "require": {
         "php": ">=5.0.0"

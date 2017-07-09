@@ -1,3 +1,5 @@
+# Tato knihovna již není dále vyvíjena a nebude podporována ani ze strany iDokladu. iDoklad nyní používá api v2, ke kterému můžete naleznout php knihovnu na [malcanek/iDoklad-v2](https://github.com/malcanek/iDoklad-v2)
+
 # iDoklad
 PHP třída pro ulehčení požadavků na iDoklad api v1.
 
